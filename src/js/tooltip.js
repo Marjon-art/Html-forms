@@ -2,7 +2,7 @@ export class Tooltip {
     constructor() {
 this._tooltips = [];
     }
-    showTooltip(message, elemnt) {
+    showTooltip(message, element) {
 
         //Чтобы удалить элемент 
         const tooltipElement = document.createElement("div");
@@ -18,6 +18,10 @@ this._tooltips = [];
 
         document.body.appendChild(tooltipElement);
         console.log(element.getBoundingClientRect())
+        const { right, top} = element.getBoundingClientRect();
+
+        tooltipElement.style.left = right + 5 + 'px';
+        tooltipElement.style.top = top + element.offsetHeight / 2 - tooltipElement.offsetHeight / 2 + 'px';
         return id; 
     }
 
