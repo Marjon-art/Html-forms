@@ -1,14 +1,14 @@
 
 
 form {
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 :invalid {
     /* border: 1px solid red; */
 }
 
-.btn {
+.mypopover {
     display: inline-block;
     text-align: center;
     vertical-align: middle;
@@ -21,7 +21,20 @@ form {
     background-color: red;
     color: white;
     cursor: pointer;
+    width: 150px;
+    margin: 5px;
+    padding: 10px;
+    margin-left: 50px;
 }
 
+.popover {
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 150px;
+    margin: 2%;
+    padding: 2%;
+}
 
-
+p {
+    background-color: rgba(216, 216, 223, 0.872);
+}
