@@ -1,10 +1,12 @@
 // TODO: write code here
+import '../css/style.css'
+import { Tooltip } from "./tooltip.js"
 
-const form = document.querySelector(".form");
+new Tooltip().showTooltip();
+const button = document.querySelector("button");
+const popover = document.querySelector(".popover");
 
-/*form.addEventListener("submit", (e) => {
-e.preventDefault();
+button.addEventListener("click", () => {
+    popover.classList.add("popover_2");
+});
 
-console.log("End here some");
-}) 
-*/
